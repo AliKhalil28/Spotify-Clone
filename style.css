@@ -67,6 +67,8 @@ nav ul li {
     border-radius: 14px;
     padding: 34px;
     background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .bottom {
@@ -163,5 +165,11 @@ nav ul li {
     .socail ul li img {
         width: 24px;
         border-radius: 13px;
+    }
+
+    .container {
+        background-image: url('bg1.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
