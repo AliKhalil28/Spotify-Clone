@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: bisque;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.socail {
+    display: flex;
+    align-items: center;
+}
+
+.socail ul li img {
+    width: 34px;
+    border-radius: 23px;
+}
+
+.socail ul li img:hover {
+    transform: scale(1.1);
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+.brand img {
+    width: 40px;
+    padding: 0 10px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.container {
+    min-height: 75vh;
+    background-color: black;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 80%;
+    border-radius: 14px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+}
+
+.bottom {
+    position: sticky;
+    height: 120px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin-top: 17px;
+}
+
+.icons i {
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+#rangeBar {
+    width: 80vw;
+    cursor: pointer;
+
+}
+
+.song-item-container {
+    margin-top: 60px;
+}
+
+.song-item {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    /* width: 80%; */
+    color: black;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 23px;
+}
+
+.song-item img {
+    width: 45px;
+    margin: 0 23px;
+    border-radius: 23px;
+}
+
+.song-name {
+    width: 14vw;
+}
+
+.time-stamp {
+    margin: 0 23px;
+}
+
+.fa-play-circle {
+    cursor: pointer;
+}
+
+.song-info {
+    position: absolute;
+    left: 10vw;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.song-info img {
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .song-info {
+        top: 5px;
+    }
+
+    .bottom {
+        height: 140px;
+    }
+
+    .bottom input {
+        margin-top: 10px;
+    }
+
+    .song-name {
+        font-size: 12px;
+    }
+
+    .socail ul li img {
+        width: 24px;
+        border-radius: 13px;
+    }
+}
