@@ -1,4 +1,4 @@
-console.log('Welcome to spotify');
+//console.log('Welcome to spotify');
 
 //Initailize the variables
 let songIndex = 0;
@@ -34,7 +34,7 @@ songItems.forEach((element, i) => {
 
 //Handle play/pause
 mainPlay.addEventListener('click', () => {
-    console.log('play/pause');
+//     console.log('play/pause');
     if (audioElement.paused || audioElement.currentTime < 0) {
         audioElement.play();
         mainPlay.classList.remove('fa-play-circle');
@@ -70,7 +70,7 @@ const makeAllPlays = () => {
 
 Array.from(document.getElementsByClassName('song-item-play')).forEach((element) => {
     element.addEventListener('click', (e) => {
-        console.log(e.target);
+        //console.log(e.target);
         makeAllPlays();
         songIndex = parseInt(e.target.id);
         e.target.classList.remove('fa-play-circle');
